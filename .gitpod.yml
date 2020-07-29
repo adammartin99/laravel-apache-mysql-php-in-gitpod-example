@@ -8,9 +8,9 @@ ports:
 tasks:
   - init: composer install;
           gp preview $(gp url 8001)
-  - name: Git
-    command: >
-        git clone https://github.com/constantinjoly/512 themes/512
+#  - name: Git
+#    command: >
+#        git clone https://github.com/constantinjoly/512 themes/512
   - name: Apache
     command: >
         apachectl start;
